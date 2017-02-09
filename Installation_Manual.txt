@@ -1,0 +1,55 @@
+For the development, I've used Yeoman Fullstack for the project setup. The development is done over MEAN stack.
+Instead of installing MongoDB on sytem, I've used the online MongoDB (mlab).
+
+|||||||||||****************Installations required before running code****************|||||||||||
+if you are using ubuntu (I've used the same), then the installation process goes like this :
+
+1. Firstly we need to install 'yo', 'gulp-cli' and 'generator-angular-fullstack'
+   COMMAND: npm install -g yo gulp-cli generator-angular-fullstack
+   if error occurs then most probably it would be of 'node-gyp' not being there.
+   Solution: install node-gyp on your system.
+
+2. Now Run yeoman fullstack.
+   COMMAND: yo angular-fullstack
+
+   \\\\\\\\\\\\\\\\\\\\\\\\\PRE-REQUISITES///////////////////////////////
+   *****************In case error is 'no curl found'*****************
+   1. You have to install curl on your system
+      command:  sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+                sudo apt-get install build-essential libssl-dev
+                curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+
+                (OR)
+                sudo apt-get install php5-curl /****(ALTERNATIVELY)
+
+   2. Time to install nodejs.
+      command: sudo apt-get install -y nodejs /***(if error occurs then use the next command and drop this one)
+               sudo apt-get install -y nodejs --force-yes /***(Only in case of error with above command)
+
+   3. Time to install npm
+      command: sudo apt-get install npm
+
+   4. Time to install nodejs
+      command: sudo apt-get install -y nodejs
+
+   5. All set, only yeoman fullstack needs to be installed
+      command: sudo npm install -g yo gulp-cli generator-angular-fullstack
+      CHOICES TO BE MADE: (build system: gulp; testing: Jasmine; scripts: Babel(JS);Module Systems: Webpack;
+                           Markup: HTML; Stylesheet: CSS; Angular routes: ngRoute; CSS Frameworks: UI Bootstrap;
+                           Server Scripts: Babel(Javascript);Database: MongoDB;Authentication boilerplate: Yes;
+                           oAuth integrations: Google;Socket.io integration: Yes)
+
+   6. To run go to the the parent directory in which node_modules are installed
+      command: gulp serve
+
+   7. A webpage will open on http://localhost:3000 on your system and database seeding starts on mlab
+
+   8. To check mlab database :
+                              i. Go to mlab.
+                              ii. Sign in with credentials: username : drunk_knight_
+                                                            password : piyush_mlab1
+                              iii. select the database with name 'notification_panel_wingify' and switch to 'things' collection.
+
+//////In case the [nodemon] crashes then exit the terminal and again run gulp serve [step 6].
+//////NOW SEE THE DIRECTORY STRUCTURE file name as Directory_structure_manual.txt
+

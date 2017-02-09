@@ -1,0 +1,21 @@
+After installing modules in directory name app you'll have all these directories:
+    Directories: client(MVC for client side), e2e, node_modules(installed modules from yeoman {mongoose,mongodb,angular packages etc.}),server
+    Files: configuration files like karma,mocha; JS files of gulp serve (here only we have to run command gulp serve), webpack building
+
+//////SERVER SIDE/////// {server directory}
+1. app.js file seeds mlab at regular interval with random notification statements.
+2. routes.js for routing in app.
+3. /config/environment/ deals with development
+4. /config/environment/development.js connects to the mlab database
+5./api/thing directory :
+                        index.js : deals with get, post, delete requests
+                        index.spec.js: actions for all the requests.
+                        thing.controller.js: performs action and also fetches notifications from database which are not read yet.
+                        thing.moedl.js: declares the mongoDB schema.
+************For notification pull/push I have used only these directories, other directories are not used.
+
+//////CLIENT SIDE//////{client directory}
+1. /client/components/ have the ui bars and modal. Events in front end for usre experienec.
+2. /client/app/main :
+                    main.component.js: posts the notifications whicha er seen by user on clicking glyphicon bell.
+                    main.html : client side interface.

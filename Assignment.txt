@@ -1,0 +1,10 @@
+It should have following things implemented:
+(checked)- The bell and the dropdown exactly as shown in above design.
+(checked)- There needs to be a backend that keeps generating new notifications at random intervals in the database.
+(checked)- The frontend needs to get these newly generated notifications on the browser using either push/pull mechanism.
+(checked)- The bell should show number of new notifications available(unread by user).
+(checked)- A notification is marked as read if the bell is clicked and notification was present in the dropdown.
+(checked)- Clicking on bell should show the dropdown with a nice animation and clicking again or clicking outside should close it.
+(checked)- On opening the dropdown the new notification count should reset to 0 and all unread notifications should be marked as read, on the backend too.
+(checked)- Needless to say, on page refresh, all the available notifications at the backend should be repopulated with correct state (read or unread).
+(checked)- You are allowed to use 3rd party libraries. But vanilla code is preferred. We expect clean and simple code in the end.

@@ -46,8 +46,8 @@ if you are using ubuntu (I've used the same), then the installation process goes
 
    8. To check mlab database :
                               i. Go to mlab.
-                              ii. Sign in with credentials: username : drunk_knight_
-                                                            password : piyush_mlab1
+                              ii. Sign in with credentials: username : 
+                                                            password : 
                               iii. select the database with name 'notification_panel_wingify' and switch to 'things' collection.
 
 //////In case the [nodemon] crashes then exit the terminal and again run gulp serve [step 6].
